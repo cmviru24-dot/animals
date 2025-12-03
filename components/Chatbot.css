@@ -1,0 +1,56 @@
+/* Typing Indicator */
+@keyframes blink {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.typing-indicator span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  height: 8px;
+  width: 8px;
+  background-color: #e2e8f0; /* slate-200 */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Small Typing Indicator for Send Button */
+.typing-indicator-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.typing-indicator-small span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  height: 4px; /* Smaller dots */
+  width: 4px;  /* Smaller dots */
+  background-color: #fff; /* white */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 1px; /* Smaller margin */
+}
+
+.typing-indicator-small span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator-small span:nth-child(3) {
+  animation-delay: 0.4s;
+}

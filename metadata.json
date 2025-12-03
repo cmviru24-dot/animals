@@ -1,0 +1,7 @@
+{
+  "name": "WildInfo",
+  "description": "An intelligent animal explorer and comparator using AI to generate comprehensive profiles, RPG-style statistics, and interactive comparisons.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
